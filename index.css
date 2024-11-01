@@ -95,7 +95,7 @@ form {
     transition: 200ms ease;
 }
 
-.delete-button {
+.delete-button, .edit-button {
     padding: 3px;
     background: none;
     border: none;
@@ -105,12 +105,16 @@ form {
     cursor: pointer;
 }
 
-.delete-button svg {
+.delete-button svg, .edit-button svg {
     transition: 300ms ease-in-out;
 }
 
 .delete-button:hover svg {
     fill: #ff0033;
+}
+
+.edit-button:hover svg {
+    fill: var(--text-color)
 }
 
 .custom-checkbox {
